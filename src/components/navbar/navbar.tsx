@@ -36,10 +36,10 @@ export default function NavBar() {
                 <h1 id='logoText'>Delighted Games</h1>
             </section>
             <nav>
-                <a className="navOption">Home</a>
-                <a className="navOption">About Us</a>
-                <a className="navOption">Projects</a>
-                <a className="navOption">Contact</a>
+                <Link href="/" className="navOption">Home</Link>
+                <Link href="/about" className="navOption">About Us</Link>
+                <Link href="/projects" className="navOption">Projects</Link>
+                <Link href="/contact" className="navOption">Contact</Link>
             </nav>
         </header>
 
