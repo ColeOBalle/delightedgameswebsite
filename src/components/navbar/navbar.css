@@ -29,6 +29,10 @@
     border-bottom: 3px solid white;;
 }
 
+.flareDivider{
+    font-size: xx-large !important;
+}
+
 header {
     margin: 20px;
     display: flex;
