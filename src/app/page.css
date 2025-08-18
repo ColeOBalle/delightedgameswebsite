@@ -1,0 +1,127 @@
+
+#introParagraph{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#aboutUs, #projSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aboutUs{
+    align-items: center;
+}
+
+#titleDiv{
+    flex: 1 1 0px;
+}
+
+#projSection{
+    padding-inline: 100px;
+    flex-wrap: wrap;
+}
+
+.imgDiv{
+    position: relative;
+    width: inherit;
+}
+
+.logo{
+    flex: 1 1 0px;
+    height: 500px;
+}
+
+.gameImg{
+    width: 33%;
+    height: inherit;
+}
+
+.descDiv{
+    margin: 50px;
+    flex: 1 1 0px;
+}
+
+p{
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-block: 50px;
+}
+
+h3{
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 601px){
+    #aboutUs, #projSection{
+        padding-inline: 100px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    #introParagraph{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    h1 {
+        font-size: 48px;
+    }
+    #introParagraph{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1500px){
+    h1 {
+        font-size: 60px;
+    }
+    #introParagraph{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 48px;
+    }
+    p{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #aboutUs, #projSection{
+        padding-inline: 25px;
+    }
+    #homeTitle{
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #introParagraph{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
