@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import './gameListItem.css';
 import { release } from "os";
 
@@ -7,22 +8,36 @@ interface Props{
     desc?: string;
     releaseDate?: string;
     thumbnailURL?: string;
-    backgroundURL?: string;
+    URL?: string;
 }
 
-const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, backgroundURL}) => {
+const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, URL}) => {
     title = title !== undefined ? title : "TBD";
     desc = desc !== undefined ? desc : "TBD";
     releaseDate = releaseDate !== undefined ? releaseDate : "TBD";
     thumbnailURL = thumbnailURL !== undefined ? thumbnailURL : "/logo.png";
-    backgroundURL = backgroundURL !== undefined ? backgroundURL : "/AdobeStock-GalaxyBackground1.jpeg";
+    URL = URL !== undefined ? URL: "";
 
-    return (    
-        <div style={{backgroundImage: backgroundURL}}>
-            <h1>{title}</h1>
-            <h2>{releaseDate}</h2>
-            <p>{desc}</p>
-        </div>
+    releaseDate = "Release Date: " + releaseDate;
+    const altText = title + " thumbnail";
+
+    return (
+        <section id="gameListItem">
+            <div className="itemInfo">
+                <h2><a href={URL}>{title}</a></h2>
+                <h3>{releaseDate}</h3>
+                <p>{desc}</p>
+            </div>
+            <figure className="itemPic">
+                <Image
+                    src={thumbnailURL}
+                    alt={altText}
+                    fill
+                    objectFit="cover"
+                    style={{borderRadius: '44px'}}
+                />
+            </figure>
+        </section>
     )
 
 }
