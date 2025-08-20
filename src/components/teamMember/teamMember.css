@@ -1,0 +1,65 @@
+#portraitDiv{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    box-shadow: 0 10px 30px rgba(72, 202, 228, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#memberInfo{
+    flex: 1 1 0px;
+}
+
+.memberInfoP{
+    font-size: 18px;
+    margin-inline: 0px;
+    margin-block: 7px;
+}
+
+figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+@media screen and (min-width: 601px){
+
+}
+
+@media screen and (min-width: 1000px){
+}
+
+@media screen and (min-width: 1500px){
+    #portraitDiv{
+        width: 150px;
+        height: 150px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    .memberInfoP{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #portraitDiv{
+        width: 75px;
+        height: 75px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .memberInfoP{
+        font-size: 18px;
+    }
+}

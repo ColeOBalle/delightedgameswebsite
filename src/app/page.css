@@ -23,6 +23,27 @@
     flex-wrap: wrap;
 }
 
+#meetTheTeam{
+    margin-top: 100px;
+    padding-top: 25px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: black;
+}
+
+.meetTheTeamH2{
+    text-align: center;
+    margin-block: 100px;
+}
+
+.teamGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: space-evenly;
+    align-items: center;
+    margin-inline: 250px;
+}
+
 .imgDiv{
     position: relative;
     width: inherit;
@@ -61,6 +82,9 @@ h3{
     #aboutUs, #projSection{
         padding-inline: 100px;
     }
+    .teamGrid{
+        margin-inline: 100px;
+    }
     h1 {
         font-size: 32px;
     }
@@ -97,6 +121,9 @@ h3{
     #introParagraph{
         font-size: 40px;
     }
+    .teamGrid{
+        margin-inline: 200px;
+    }
     h3{
         font-size: 48px;
     }
@@ -111,6 +138,9 @@ h3{
     }
     #homeTitle{
         font-size: 20px;
+    }
+    .teamGrid{
+        margin-inline: 50px;
     }
     h1 {
         font-size: 24px;
