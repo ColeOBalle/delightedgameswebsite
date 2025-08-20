@@ -80,7 +80,7 @@ export default function Home()
         <div className="teamGrid">
             <TeamMember name="Mateo Fernandez" role="Writing" email="profernandezmf@gmail.com"/>
             <TeamMember name="Dylan Truong" role="3D Modeling" email="dylantruong03@gmail.com"/>
-            <TeamMember name="Justin Dawn" role="" email="justindawn321@gmail.com" portrait="/justindawn.jpg"/>
+            <TeamMember name="Justin Dawn" role="3D Modeling" email="justindawn321@gmail.com" portrait="/justindawn.jpg"/>
         </div>
       </section>
     </main>
