@@ -1,11 +1,13 @@
-import GameListItem from '@/components/gameListItem/gameListItem';
-import './games.css';
+'use client';
 
-export default async function GamesLayout() {
+import GameListItem from '@/components/gameListItem/gameListItem';
+import styles from './games.module.css';
+
+export default function GamesLayout() {
     return (
         <main>
-            <h1 id="title">Our Games</h1>
-            <hr></hr>
+            <h1 className={styles.title}>Our Games</h1>
+            <hr className={styles.hr}></hr>
             <GameListItem 
                 title="Landed"
                 desc="Our first major project. Landed invites you to navigate a world on the brink of demise—where every choice shapes the fate of those around you." 

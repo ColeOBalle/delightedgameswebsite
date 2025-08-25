@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import './gameListItem.css';
+import styles from "./gameListItem.module.css"
 import { release } from "os";
 
 interface Props{
@@ -22,13 +22,13 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
     const altText = title + " thumbnail";
 
     return (
-        <section id="gameListItem">
-            <div className="itemInfo">
-                <h2><a href={URL}>{title}</a></h2>
-                <h3>{releaseDate}</h3>
-                <p>{desc}</p>
+        <section className={styles.gameListItem}>
+            <div className={styles.itemInfo}>
+                <h2 className={styles.h2}><a href={URL}>{title}</a></h2>
+                <h3 className={styles.h3}>{releaseDate}</h3>
+                <p className={styles.p}>{desc}</p>
             </div>
-            <figure className="itemPic">
+            <figure className={styles.itemPic}>
                 <Image
                     src={thumbnailURL}
                     alt={altText}

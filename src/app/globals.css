@@ -1,12 +1,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background2: lightgray;
+  --foreground2: black;
+  --logo-invert: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --background2: black;
+    --foreground2: lightgray;
+    --logo-invert: 0%;
   }
 }
 
