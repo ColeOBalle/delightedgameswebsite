@@ -38,7 +38,7 @@ export default function Home()
         <div className={styles.descDiv}>
           <h3 className={styles.h3}>Landed</h3>
           <p className={styles.p}>Our first major project, Landed, invites you to navigate a world on the brink of demise—where every choice shapes the fate of those around you.</p>
-          <Button variant="contained" sx={{
+          <Button href="/games/landed" variant="contained" sx={{
             fontSize: {
               xs: "0.75rem",
               sm: "1rem",
@@ -50,7 +50,8 @@ export default function Home()
               sm: "10px 15px",
               md: "10px 20px",
               lg: "10px 40px"
-            }
+            },
+            textTransform: "none"
             }}>Learn More
           </Button>
           <div></div>
