@@ -14,22 +14,24 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
     const altText = name + " portrait";
 
     return(
-        <figure className={styles.figure}>
-            <div className={styles.portraitDiv}>
-                <Image
-                    src={portrait}
-                    alt={altText}
-                    fill
-                    objectFit='cover'
-                    style={{borderRadius: '50%'}}
-                />
-            </div>
-            <div className={styles.memberInfo}>
-                <h2 className={styles.h2}>{name}</h2>
-                <p className={styles.memberInfoP}>{role}</p>
-                <p className={styles.memberInfoP}>{email}</p>
-            </div>
-        </figure>
+        <div className={styles.item}>
+            <figure className={styles.figure}>
+                <div className={styles.portraitDiv}>
+                    <Image
+                        src={portrait}
+                        alt={altText}
+                        fill
+                        objectFit='cover'
+                        style={{borderRadius: '50%'}}
+                    />
+                </div>
+                <div>
+                    <h2 className={styles.h2}>{name}</h2>
+                    <p className={styles.memberInfoP}>{role}</p>
+                    <p className={styles.memberInfoP}>{email}</p>
+                </div>
+            </figure>   
+        </div>
     )
 };
 

@@ -9,9 +9,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.memberInfo{
-    flex: 1 1 0px;
-}
 
 .memberInfoP{
     font-size: 18px;
@@ -25,10 +22,16 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 350px;
 }
 
 .h2{
     font-size: 24px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 601px){

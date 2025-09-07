@@ -205,12 +205,12 @@ a.secondary {
 .meetTheTeamH2{
     text-align: center;
     margin-block: 100px;
+    font-size: 40px;
 }
 
 .teamGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     margin-inline: 250px;
 }
@@ -260,6 +260,9 @@ a.secondary {
     .h1 {
         font-size: 32px;
     }
+    .meetTheTeamH2{
+      font-size: 24px;
+    }
     .introParagraph{
         font-size: 24px;
     }
@@ -275,6 +278,9 @@ a.secondary {
     .h1 {
         font-size: 48px;
     }
+    .meetTheTeamH2{
+      font-size: 32px;
+    }
     .introParagraph{
         font-size: 32px;
     }
@@ -289,6 +295,9 @@ a.secondary {
 @media screen and (min-width: 1500px){
     .h1 {
         font-size: 60px;
+    }
+    .meetTheTeamH2{
+      font-size: 48px;
     }
     .introParagraph{
         font-size: 40px;
@@ -316,6 +325,9 @@ a.secondary {
     }
     .h1 {
         font-size: 24px;
+    }
+    .meetTheTeamH2{
+      font-size: 18px;
     }
     .introParagraph{
         font-size: 18px;
