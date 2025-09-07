@@ -1,4 +1,4 @@
-#portraitDiv{
+.portraitDiv{
     position: relative;
     width: 100px;
     height: 100px;
@@ -9,7 +9,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#memberInfo{
+.memberInfo{
     flex: 1 1 0px;
 }
 
@@ -19,7 +19,7 @@
     margin-block: 7px;
 }
 
-figure{
+.figure{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +27,7 @@ figure{
     margin-bottom: 50px;
 }
 
-h2{
+.h2{
     font-size: 24px;
 }
 
@@ -39,11 +39,11 @@ h2{
 }
 
 @media screen and (min-width: 1500px){
-    #portraitDiv{
+    .portraitDiv{
         width: 150px;
         height: 150px;
     }
-    h2{
+    .h2{
         font-size: 32px;
     }
     .memberInfoP{
@@ -52,14 +52,14 @@ h2{
 }
 
 @media screen and (max-width: 600px){
-    #portraitDiv{
+    .portraitDiv{
         width: 75px;
         height: 75px;
     }
-    h2{
-        font-size: 24px;
+    .h2{
+        font-size: 20px;
     }
     .memberInfoP{
-        font-size: 18px;
+        font-size: 14px;
     }
 }
