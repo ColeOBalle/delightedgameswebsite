@@ -51,6 +51,25 @@
     align-items: center;
 }
 
+.hamburger {
+    margin-top: 12px;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-flow: column nowrap;
+}
+
+.patty {
+    width: inherit;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: var(--foreground);
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
 @media screen and (min-width: 601px){
     .logoText {
         font-size: 24px;
@@ -92,10 +111,10 @@
 
 @media screen and (max-width: 600px){
     .logoText {
-        font-size: 16px;
+        font-size: 18px;
     }
     .logo {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 }
