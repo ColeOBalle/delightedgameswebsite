@@ -6,7 +6,6 @@
     margin-top: 100px;
     margin-bottom: 50px;
     padding-bottom: 25px;
-    margin-inline: 33%;
     border-bottom: 3px solid gray;
 }
 
@@ -20,7 +19,7 @@
 
 .teamGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     margin-inline: 250px;
 }
@@ -35,6 +34,9 @@
     }    
     .teamGrid{
         margin-inline: 100px;
+    }
+    .title{        
+        margin-inline: 33%;
     }
 }
 
@@ -71,5 +73,8 @@
     }
     .teamGrid{
         margin-inline: 50px;
+    }
+    .title{        
+        margin-inline: 25%;
     }
 }
