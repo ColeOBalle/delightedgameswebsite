@@ -2,8 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/delightedgameswebsite",
-  images: {unoptimized: true}
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  assetPrefix: "./"
 };
 
 export default nextConfig;
