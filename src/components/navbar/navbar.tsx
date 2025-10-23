@@ -10,15 +10,14 @@ import { Spin as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import '@/app/globals.css';
 import styles from './navbar.module.css';
-import { defaultConfig } from 'next/dist/server/config-shared';
-import { duration } from '@mui/material';
+import { prefix } from '../../../utils/prefix';
 
 function Logo() {
     return (
         <Link href='/' className={styles.logoLink}>
             <Image
                 className={styles.logoImg}
-                src='/logo.png'
+                src={`${prefix}/logo.png`}
                 alt='Delighted Games Logo'
                 fill
                 objectFit='contain'
