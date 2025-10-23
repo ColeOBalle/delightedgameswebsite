@@ -26,7 +26,7 @@ export default function Home()
         </div>
       </section>
 
-      <h1 className={styles.h1}>What We're Working On:</h1>
+      <h1 className={styles.h1}>What We Are Working On:</h1>
 
       <section className={styles.projSection}>
         <div className={styles.imgDiv+" "+styles.gameImg}>
