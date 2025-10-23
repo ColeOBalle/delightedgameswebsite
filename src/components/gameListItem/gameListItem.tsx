@@ -30,7 +30,7 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
             </div>
             <figure className={styles.itemPic}>
                 <Image
-                    src={thumbnailURL}
+                    src=/delightedgameswebsite/public/{thumbnailURL}
                     alt={altText}
                     fill
                     objectFit="cover"
