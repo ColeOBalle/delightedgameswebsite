@@ -5,7 +5,6 @@ import styles from "./page.module.css";
 import Icon from '@mui/material/Icon'
 import TeamMember from "@/components/teamMember/teamMember";
 import { Button, createTheme } from "@mui/material";
-import { prefix } from "../../utils/prefix";
 
 export default function Home() 
 {
@@ -19,7 +18,7 @@ export default function Home()
         </div>
         <div className={styles.imgDiv+" "+styles.logo}>
           <Image
-            src={`${prefix}/logo.png`}
+            src={`/logo.png`}
             alt="DelightedGames Logo"
             fill
             objectFit="contain"
@@ -32,7 +31,7 @@ export default function Home()
       <section className={styles.projSection}>
         <div className={styles.imgDiv+" "+styles.gameImg}>
           <Image
-            src={`${prefix}/Landed Updated Logo.png`}
+            src={`/Landed Updated Logo.png`}
             alt="Landed logo"
             fill
             objectFit="contain"

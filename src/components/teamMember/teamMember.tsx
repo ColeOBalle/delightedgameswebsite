@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './teamMember.module.css'
-import { prefix } from '../../../utils/prefix';
 
 interface Props{
     name: string;
@@ -19,7 +18,7 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
             <figure className={styles.figure}>
                 <div className={styles.portraitDiv}>
                     <Image
-                        src={`${prefix}` + portrait}
+                        src={portrait}
                         alt={altText}
                         fill
                         objectFit='cover'

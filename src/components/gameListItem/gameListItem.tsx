@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./gameListItem.module.css"
-import { prefix } from "../../../utils/prefix";
 
 interface Props{
     title?: string;
@@ -30,7 +29,7 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
             </div>
             <figure className={styles.itemPic}>
                 <Image
-                    src={`${prefix}` + thumbnailURL}
+                    src={thumbnailURL}
                     alt={altText}
                     fill
                     objectFit="cover"
