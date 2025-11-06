@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -18,8 +18,8 @@ export default function Home()
         </div>
         <div className={styles.imgDiv+" "+styles.logo}>
           <Image
-            src={`/logo.png`}
-            alt="DelightedGames Logo"
+            src='/delightedgameswebsite/logo.png'
+            alt="Delighted Games Logo"
             fill
             objectFit="contain"
             unoptimized
@@ -32,7 +32,7 @@ export default function Home()
       <section className={styles.projSection}>
         <div className={styles.imgDiv+" "+styles.gameImg}>
           <Image
-            src={`/Landed Updated Logo.png`}
+            src='/delightedgameswebsite/Landed Updated Logo.png'
             alt="Landed logo"
             fill
             objectFit="contain"
@@ -42,7 +42,7 @@ export default function Home()
         <div className={styles.descDiv}>
           <h3 className={styles.h3}>Landed</h3>
           <p className={styles.p}>Our first major project, Landed, invites you to navigate a world on the brink of demise—where every choice shapes the fate of those around you.</p>
-          <Button href="/games/landed" variant="contained" sx={{
+          <Button href="https://store.steampowered.com/app/3871950/LANDED/" variant="contained" sx={{
             fontSize: {
               xs: "0.75rem",
               sm: "1rem",

@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NavBar from '@/components/navbar/navbar';
@@ -25,12 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link precedence="default"
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      />
+      <head>
+        <link precedence="default"
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <NavBar />
+        <NavBar></NavBar>  
         {children}
       </body>
     </html>

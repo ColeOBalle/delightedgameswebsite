@@ -18,7 +18,7 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
             <figure className={styles.figure}>
                 <div className={styles.portraitDiv}>
                     <Image
-                        src={portrait}
+                        src={"/delightedgameswebsite" + portrait}
                         alt={altText}
                         fill
                         objectFit='cover'

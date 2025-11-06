@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Icon from '@mui/material/Icon'
 import { useState } from 'react';
 import { useWindowWidth } from '@react-hook/window-size';
@@ -16,10 +16,10 @@ function Logo() {
         <Link href='/' className={styles.logoLink}>
             <Image
                 className={styles.logoImg}
-                src={`/logo.png`}
+                src='/delightedgameswebsite/logo.png'
                 alt='Delighted Games Logo'
                 fill
-                objectFit='contain'
+                style={{objectFit: 'contain'}}
                 unoptimized
             />
         </Link>
@@ -115,14 +115,15 @@ function HamburgerNavBar(){
 }
 
 export default function NavBar() {
-    const screenWidth = useWindowWidth();
-
-    if(screenWidth >= 600){
-        // width screen = standard nav bar
-        return (<StandardNavBar/>);
-
-    } else {
-        // small screen = hamburger menu
-        return (<HamburgerNavBar/>);
-    }
+    
+    return(
+        <>
+            <div className={styles.standardNav}>
+                <StandardNavBar />
+            </div>
+            <div className={styles.hamburgerNav}>
+                <HamburgerNavBar />
+            </div>
+        </>
+    )
 }

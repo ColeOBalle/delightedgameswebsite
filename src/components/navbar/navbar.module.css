@@ -12,6 +12,7 @@
 .logo {
     display: flex;
     margin: 0px;
+    position: relative;
 }
 
 .logoLink{
@@ -97,6 +98,12 @@
     .navOption {
         font-size: 18px;
     }
+    .standardNav{
+        display: block;
+    }
+    .hamburgerNav{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -109,6 +116,12 @@
     }
     .navOption {
         font-size: 20px;
+    }
+    .standardNav{
+        display: block;
+    }
+    .hamburgerNav{
+        display: none;
     }
 }
 
@@ -123,6 +136,12 @@
     .navOption {
         font-size: 24px;
     }
+    .standardNav{
+        display: block;
+    }
+    .hamburgerNav{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -132,5 +151,11 @@
     .logo {
         width: 60px;
         height: 60px;
+    }
+    .standardNav{
+        display: none;
+    }
+    .hamburgerNav{
+        display: block;
     }
 }
