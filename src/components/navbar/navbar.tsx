@@ -20,6 +20,7 @@ function Logo() {
                 alt='Delighted Games Logo'
                 fill
                 objectFit='contain'
+                unoptimized
             />
         </Link>
     );

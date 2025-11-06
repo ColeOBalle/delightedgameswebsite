@@ -22,6 +22,7 @@ export default function Home()
             alt="DelightedGames Logo"
             fill
             objectFit="contain"
+            unoptimized
           />
         </div>
       </section>
@@ -35,6 +36,7 @@ export default function Home()
             alt="Landed logo"
             fill
             objectFit="contain"
+            unoptimized
           />
         </div>
         <div className={styles.descDiv}>

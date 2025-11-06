@@ -34,6 +34,7 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
                     fill
                     objectFit="cover"
                     style={{borderRadius: '44px'}}
+                    unoptimized
                 />
             </figure>
         </section>

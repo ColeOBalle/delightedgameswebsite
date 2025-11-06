@@ -23,6 +23,7 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
                         fill
                         objectFit='cover'
                         style={{borderRadius: '50%'}}
+                        unoptimized
                     />
                 </div>
                 <div>
