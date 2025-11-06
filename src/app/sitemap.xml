@@ -1,0 +1,20 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://delightedgames.com</loc>
+    <lastmod>Today</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://delightedgames.com/contact</loc>
+    <lastmod>Today</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://delightedgames.com/games</loc>
+    <lastmod>contact</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
