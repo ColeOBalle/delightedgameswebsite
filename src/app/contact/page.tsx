@@ -50,6 +50,7 @@ export default async function ContactLayout() {
                 <TeamMember name="Luke Sheng" role="Game Design" email="lukesheng1234@gmail.com" portrait="/lukesheng.jpg" />
                 <TeamMember name="Bella Garza" role="Marketing" email="bellrg13@gmail.com" portrait="/bellagarza.jpg" />
                 <TeamMember name="Leo" role="2D Artist" email="leo160824@gmail.com" portrait="/leo.png"/>
+                <TeamMember name="Drew Magro" role="Sound Design" email="drewmagrosound@gmail.com" portrait="/drewmagro.jpeg"/>
             </div>
         </main>
     )
