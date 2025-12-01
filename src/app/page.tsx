@@ -6,17 +6,16 @@ import Icon from '@mui/material/Icon'
 import TeamMember from "@/components/teamMember/teamMember";
 import { Button, createTheme } from "@mui/material";
 
-export default function Home() 
-{
+export default function Home() {
   return (
     <main>
 
       <section className={styles.aboutUs}>
         <div className={styles.titleDiv}>
-          <h1 className={styles.homeTitle+" "+styles.h1}><Icon fontSize="inherit">flare</Icon> About Us <Icon fontSize="inherit">flare</Icon></h1>
-          <h2 className={styles.introParagraph}>We’re a small team of college students passionate about creating story-driven games that inspire players to make a difference in the world.</h2>
+          <h1 className={styles.homeTitle + " " + styles.h1}><Icon fontSize="inherit">flare</Icon> About Us <Icon fontSize="inherit">flare</Icon></h1>
+          <h2 className={styles.introParagraph}>We’re a small team of indie developers passionate about creating story-driven games that inspire players to make a difference in the world.</h2>
         </div>
-        <div className={styles.imgDiv+" "+styles.logo}>
+        <div className={styles.imgDiv + " " + styles.logo}>
           <Image
             src='/delightedgameswebsite/logo.png'
             alt="Delighted Games Logo"
@@ -30,7 +29,7 @@ export default function Home()
       <h1 className={styles.h1}>What We Are Working On:</h1>
 
       <section className={styles.projSection}>
-        <div className={styles.imgDiv+" "+styles.gameImg}>
+        <div className={styles.imgDiv + " " + styles.gameImg}>
           <Image
             src='/delightedgameswebsite/Landed Updated Logo.png'
             alt="Landed logo"
@@ -56,7 +55,7 @@ export default function Home()
               lg: "10px 40px"
             },
             textTransform: "none"
-            }}>Learn More
+          }}>Learn More
           </Button>
           <div></div>
         </div>
@@ -77,9 +76,9 @@ export default function Home()
         </div>
         <h2 className={styles.meetTheTeamH2}>With Some Extra Help From:</h2>
         <div className={styles.teamGrid}>
-            <TeamMember name="Mateo Fernandez" role="Writing" email="profernandezmf@gmail.com"/>
-            <TeamMember name="Dylan Truong" role="3D Modeling" email="dylantruong03@gmail.com"/>
-            <TeamMember name="Justin Dawn" role="3D Modeling" email="justindawn321@gmail.com" portrait="/justindawn.jpg"/>
+          <TeamMember name="Mateo Fernandez" role="Writing" email="profernandezmf@gmail.com" />
+          <TeamMember name="Dylan Truong" role="3D Modeling" email="dylantruong03@gmail.com" />
+          <TeamMember name="Justin Dawn" role="3D Modeling" email="justindawn321@gmail.com" portrait="/justindawn.jpg" />
         </div>
       </section>
     </main>

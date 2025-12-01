@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Delighted Games",
-  description: "A Christian Indie Game Company",
+  description: "",
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <NavBar></NavBar>  
+        <NavBar></NavBar>
         {children}
       </body>
     </html>
