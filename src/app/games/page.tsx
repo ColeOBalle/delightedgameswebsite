@@ -12,7 +12,7 @@ export default function GamesLayout() {
                 title="Landed"
                 desc="Our first major project. Landed invites you to navigate a world on the brink of demise—where every choice shapes the fate of those around you." 
                 thumbnailURL='Landed Updated Logo.png' 
-                URL='/games/landed'/>
+                URL='/games'/>
         </main>
     )
 }
