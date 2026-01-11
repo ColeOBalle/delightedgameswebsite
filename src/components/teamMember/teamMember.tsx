@@ -9,7 +9,7 @@ interface Props{
 }
 
 const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
-    portrait = portrait !== undefined ? portrait : "/pfp.png";
+    portrait = portrait !== undefined ? portrait : "pfp.png";
 
     const altText = name + " portrait";
 
@@ -18,7 +18,7 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
             <figure className={styles.figure}>
                 <div className={styles.portraitDiv}>
                     <Image
-                        src={"/delightedgameswebsite" + portrait}
+                        src={portrait}
                         alt={altText}
                         fill
                         objectFit='cover'

@@ -14,7 +14,7 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
     title = title !== undefined ? title : "TBD";
     desc = desc !== undefined ? desc : "TBD";
     releaseDate = releaseDate !== undefined ? releaseDate : "TBD";
-    thumbnailURL = thumbnailURL !== undefined ? thumbnailURL : "/logo.png";
+    thumbnailURL = thumbnailURL !== undefined ? thumbnailURL : "logo.png";
     URL = URL !== undefined ? URL: "";
 
     releaseDate = "Release Date: " + releaseDate;
@@ -29,7 +29,7 @@ const GameListItem: React.FC<Props> = ({title, desc, releaseDate, thumbnailURL, 
             </div>
             <figure className={styles.itemPic}>
                 <Image
-                    src={"/delightedgameswebsite" + thumbnailURL}
+                    src={thumbnailURL}
                     alt={altText}
                     fill
                     objectFit="cover"

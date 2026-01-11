@@ -64,22 +64,22 @@ export default function Home() {
       <section className={styles.meetTheTeam}>
         <h1 className={styles.h1}>Meet the Team</h1>
         <div className={styles.teamGrid}>
-            <TeamMember name="Amelia Trautman" role="Team Lead" email="ajt51805@gmail.com" portrait="/ameliatrautman.jpg"/>
-            <TeamMember name="Cole O'Balle" role="Producer" email="cole.oballe@gmail.com" portrait="/coleoballe.jpg"/>
-            <TeamMember name="Chris Sun" role="Lead Programmer" email="chrisun8@yahoo.com" portrait="/chrissun.jpg"/>
-            <TeamMember name="Aidan Hart" role="Lead 3D Modeler" email="hartam1@uci.edu" portrait="/aidanhart.jpg" />
-            <TeamMember name="Solaiman Farooqi" role="Audio" email="solaimaf@uci.edu" portrait="/solaimanfarooqi.jpg" />
-            <TeamMember name="Luke Sheng" role="Game Design" email="lukesheng1234@gmail.com" portrait="/lukesheng.jpg" />
-            <TeamMember name="Bella Garza" role="Marketing" email="bellrg13@gmail.com" portrait="/bellagarza.jpg" />
-            <TeamMember name="Leo" role="2D Artist" email="leo160824@gmail.com" portrait="/leo.png"/>
-            <TeamMember name="Drew Magro" role="Sound Design" email="drewmagrosound@gmail.com" portrait="/drewmagro.jpeg"/>
+            <TeamMember name="Amelia Trautman" role="Team Lead" email="ajt51805@gmail.com" portrait="ameliatrautman.jpg"/>
+            <TeamMember name="Cole O'Balle" role="Producer" email="cole.oballe@gmail.com" portrait="coleoballe.jpg"/>
+            <TeamMember name="Chris Sun" role="Lead Programmer" email="chrisun8@yahoo.com" portrait="chrissun.jpg"/>
+            <TeamMember name="Aidan Hart" role="Lead 3D Modeler" email="hartam1@uci.edu" portrait="aidanhart.jpg" />
+            <TeamMember name="Solaiman Farooqi" role="Audio" email="solaimaf@uci.edu" portrait="solaimanfarooqi.jpg" />
+            <TeamMember name="Luke Sheng" role="Game Design" email="lukesheng1234@gmail.com" portrait="lukesheng.jpg" />
+            <TeamMember name="Bella Garza" role="Marketing" email="bellrg13@gmail.com" portrait="bellagarza.jpg" />
+            <TeamMember name="Leo" role="2D Artist" email="leo160824@gmail.com" portrait="leo.png"/>
+            <TeamMember name="Drew Magro" role="Sound Design" email="drewmagrosound@gmail.com" portrait="drewmagro.jpeg"/>
             <TeamMember name="Grayson Ziegler" role="2D Artist" email="graysonziegler@gmail.com"/>
         </div>
         <h2 className={styles.meetTheTeamH2}>With Some Extra Help From:</h2>
         <div className={styles.teamGrid}>
           <TeamMember name="Mateo Fernandez" role="Writing" email="profernandezmf@gmail.com" />
           <TeamMember name="Dylan Truong" role="3D Modeling" email="dylantruong03@gmail.com" />
-          <TeamMember name="Justin Dawn" role="3D Modeling" email="justindawn321@gmail.com" portrait="/justindawn.jpg" />
+          <TeamMember name="Justin Dawn" role="3D Modeling" email="justindawn321@gmail.com" portrait="justindawn.jpg" />
         </div>
       </section>
     </main>

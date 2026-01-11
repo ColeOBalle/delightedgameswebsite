@@ -16,7 +16,7 @@ function Logo() {
         <Link href='/' className={styles.logoLink}>
             <Image
                 className={styles.logoImg}
-                src='/delightedgameswebsite/logo.png'
+                src='logo.png'
                 alt='Delighted Games Logo'
                 fill
                 style={{objectFit: 'contain'}}
