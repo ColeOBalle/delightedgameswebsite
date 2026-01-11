@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className={styles.imgDiv + " " + styles.logo}>
           <Image
-            src='/delightedgameswebsite/logo.png'
+            src='logo.png'
             alt="Delighted Games Logo"
             fill
             objectFit="contain"
@@ -31,7 +31,7 @@ export default function Home() {
       <section className={styles.projSection}>
         <div className={styles.imgDiv + " " + styles.gameImg}>
           <Image
-            src='/delightedgameswebsite/Landed Updated Logo.png'
+            src='Landed Updated Logo.png'
             alt="Landed logo"
             fill
             objectFit="contain"
