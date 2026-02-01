@@ -17,6 +17,13 @@ const TeamMember: React.FC<Props> = ({name, role, email, linkedIn, portrait}) =>
 
     const altText = name + " portrait";
 
+    function LinkedInInfo({linkedIn}: { linkedIn: string }): React.ReactElement | null {
+        if (linkedIn != "") {
+            return (<p className={styles.memberInfoP}><LinkedInIcon></LinkedInIcon> <a className={styles.a} href={"https://www.linkedin.com/in/" + linkedIn}>{linkedIn}</a></p>);
+        }
+        return null;
+    }
+
     return(
         <div className={styles.item}>
             <figure className={styles.figure}>
@@ -34,7 +41,7 @@ const TeamMember: React.FC<Props> = ({name, role, email, linkedIn, portrait}) =>
                     <h2 className={styles.h2}>{name}</h2>
                     <p className={styles.memberInfoP}>{role}</p>
                     <p className={styles.memberInfoP}><MailOutline></MailOutline> {email}</p>
-                    <p className={styles.memberInfoP}><LinkedInIcon></LinkedInIcon> {linkedIn}</p>
+                    <LinkedInInfo linkedIn={linkedIn}></LinkedInInfo>
                 </div>
             </figure>   
         </div>

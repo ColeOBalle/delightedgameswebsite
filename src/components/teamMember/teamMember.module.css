@@ -1,3 +1,7 @@
+.a:hover{
+    text-decoration: underline;
+}
+
 .portraitDiv{
     position: relative;
     width: 100px;
