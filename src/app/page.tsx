@@ -64,15 +64,16 @@ export default function Home() {
       <section className={styles.meetTheTeam}>
         <h1 className={styles.h1}>Meet the Team</h1>
         <div className={styles.teamGrid}>
-            <TeamMember name="Amelia Trautman" role="Team Lead" email="ajt51805@gmail.com" portrait="ameliatrautman.jpg"/>
-            <TeamMember name="Cole O'Balle" role="Producer" email="cole.oballe@gmail.com" portrait="coleoballe.jpg"/>
+            <TeamMember name="Amelia Trautman" role="Team Lead" email="ajt51805@gmail.com" linkedIn="amelia-trautman-01b68727b" portrait="ameliatrautman.jpg"/>
+            <TeamMember name="Cole O'Balle" role="Producer" email="cole.oballe@gmail.com" linkedIn="cole-oballe" portrait="coleoballe.jpg"/>
             <TeamMember name="Chris Sun" role="Lead Programmer" email="chrisun8@yahoo.com" portrait="chrissun.jpg"/>
             <TeamMember name="Aidan Hart" role="Lead 3D Modeler" email="hartam1@uci.edu" portrait="aidanhart.jpg" />
+            <TeamMember name="Britton Purcell" role="Social Media Manager" email="britton.paige33@gmail.com" linkedIn="britton-purcell"/>
             <TeamMember name="Solaiman Farooqi" role="Audio" email="solaimaf@uci.edu" portrait="solaimanfarooqi.jpg" />
-            <TeamMember name="Luke Sheng" role="Game Design" email="lukesheng1234@gmail.com" portrait="lukesheng.jpg" />
+            <TeamMember name="Luke Sheng" role="Game Design" email="lukesheng1234@gmail.com" linkedIn="luke-sheng-71651a318" portrait="lukesheng.jpg" />
             <TeamMember name="Bella Garza" role="Marketing" email="bellrg13@gmail.com" portrait="bellagarza.jpg" />
             <TeamMember name="Leo" role="2D Artist" email="leo160824@gmail.com" portrait="leo.png"/>
-            <TeamMember name="Drew Magro" role="Sound Design" email="drewmagrosound@gmail.com" portrait="drewmagro.jpeg"/>
+            <TeamMember name="Drew Magro" role="Sound Design" email="drewmagrosound@gmail.com" linkedIn="drew-magro-aa58a8291" portrait="drewmagro.jpeg"/>
             <TeamMember name="Grayson Ziegler" role="2D Artist" email="graysonziegler@gmail.com"/>
         </div>
         <h2 className={styles.meetTheTeamH2}>With Some Extra Help From:</h2>

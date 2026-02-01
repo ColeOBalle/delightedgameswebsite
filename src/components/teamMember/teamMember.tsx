@@ -1,15 +1,19 @@
 import Image from 'next/image';
+import { MailOutline } from '@mui/icons-material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styles from './teamMember.module.css'
 
 interface Props{
     name: string;
     role: string;
     email: string;
+    linkedIn?: string;
     portrait?: string;
 }
 
-const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
+const TeamMember: React.FC<Props> = ({name, role, email, linkedIn, portrait}) => {
     portrait = portrait !== undefined ? portrait : "pfp.png";
+    linkedIn = linkedIn !== undefined ? linkedIn : "";
 
     const altText = name + " portrait";
 
@@ -29,7 +33,8 @@ const TeamMember: React.FC<Props> = ({name, role, email, portrait}) => {
                 <div>
                     <h2 className={styles.h2}>{name}</h2>
                     <p className={styles.memberInfoP}>{role}</p>
-                    <p className={styles.memberInfoP}>{email}</p>
+                    <p className={styles.memberInfoP}><MailOutline></MailOutline> {email}</p>
+                    <p className={styles.memberInfoP}><LinkedInIcon></LinkedInIcon> {linkedIn}</p>
                 </div>
             </figure>   
         </div>
